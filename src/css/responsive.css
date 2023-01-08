@@ -1,0 +1,89 @@
+@media (max-width:376px) {
+    html {
+        background: url(../images/bg-mobile.svg);
+        background-color: hsl(257, 40%, 49%);
+    }
+
+    .cabecalho .logo {
+        max-width: 20rem;
+        
+    }
+
+    .container {
+        padding: 0px ;
+    }
+
+    .container .image-design {
+        max-width: 100px;
+    }
+
+    .content .text-content h1 {
+        font-size: 2rem;
+
+    }
+
+    .content .text-content .button a {
+        padding: 20px 90px;
+    }
+
+    .content .text-content p{
+        padding-top: 0;
+    }
+    .content .text-content p,
+    .content .text-content .button a {
+        font-size: 1.5rem;
+        margin-top: 40px;
+    }
+
+    .rodape .social {
+        margin: 10px 0px 20px 0px;
+    }
+}
+
+@media (max-width:426px) {
+    .cabecalho .logo {
+        margin-bottom: 30px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .content .text-content {
+        text-align: center;
+    }
+}
+
+
+@media (max-width:768px) {
+    .container .image-design {
+        min-width: 323px;
+    }
+
+    .content .text-content h1 {
+        font-size: 3rem;
+
+    }
+
+    .content .text-content p {
+        font-size: 1.7rem;
+    }
+
+    .rodape .social {
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0px 20px 0px;
+        padding-right: 0rem;
+    }
+}
+
+
+@media (max-width:1024px) {
+    .cabecalho .logo {
+        padding-bottom: 0px;
+    }
+}

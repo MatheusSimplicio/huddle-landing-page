@@ -11,13 +11,14 @@ html {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 60px;
+    padding: 20px 60px;
     gap: 40px;
 }
 
 .container .image-design {
     display: flex;
     align-items: center;
+    min-width: 506px;
 }
 
 .content {
@@ -28,18 +29,20 @@ html {
 }
 
 .content .text-content {
+    padding-top: 2.5rem;
     align-items: flex-start;
 }
 
 .content .text-content h1 {
-    font-size: 5.5rem;
+    font-size: 3.5rem;
     font-family: 'Poppins', sans-serif;
     color: #fff;
 }
 
 .content .text-content p,
 .content .text-content .button a {
-font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 20px;
 }
 
 .content .text-content p {
@@ -58,32 +61,38 @@ font-family: 'Open Sans', sans-serif;
     color: hsl(257, 40%, 49%);
 }
 
-.content .text-content .button a:hover{
+.content .text-content .button a:hover {
     background-color: hsl(300, 69%, 71%);
-    color: #fff;    
+    color: #fff;
 }
 
 .rodape .social {
     display: flex;
     justify-content: flex-end;
-    text-align: flex-start;
-    align-items: center;
     margin: 30px;
-    padding-right: 8rem;
+    padding-right: 5rem;
 }
 
 .rodape .social a {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #fff;
     border: 1px solid #fff;
-    padding: 2rem;
+    width: 50px;
+    height: 50px;
     margin-left: 1.5rem;
-    border-radius: 100%;
+    border-radius: 50%;
     transition: .3s ease-in-out;
+    position: relative;
 }
 
-.rodape .social a:hover{
-    
+.rodape .social a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rodape .social a:hover {
     color: hsl(300, 69%, 71%);
     border: 1px solid hsl(300, 69%, 71%);
 }
