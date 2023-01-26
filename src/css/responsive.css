@@ -1,48 +1,45 @@
-@media (max-width:376px) {
-    html {
-        background: url(../images/bg-mobile.svg);
-        background-color: hsl(257, 40%, 49%);
-    }
-
+@media (max-width:1439px) {
     .cabecalho .logo {
-        max-width: 20rem;
-        
-    }
-
-    .container {
-        padding: 0px ;
+        padding-bottom: 0px;
     }
 
     .container .image-design {
-        max-width: 100px;
-    }
-
-    .content .text-content h1 {
-        font-size: 2rem;
-
-    }
-
-    .content .text-content .button a {
-        padding: 20px 90px;
+        min-width: 0;
     }
 
     .content .text-content p{
-        padding-top: 0;
+        font-size: 1.6rem;
     }
-    .content .text-content p,
+    
     .content .text-content .button a {
-        font-size: 1.5rem;
-        margin-top: 40px;
-    }
-
-    .rodape .social {
-        margin: 10px 0px 20px 0px;
+        font-size: 1.65rem;
     }
 }
 
-@media (max-width:426px) {
+
+@media (max-width:1023px) {
+    html {
+        background: url(../images/bg-mobile.svg) center no-repeat;
+        background-color: hsl(257, 40%, 49%);
+        background-size: cover;
+    }
+
     .cabecalho .logo {
-        margin-bottom: 30px;
+        margin-bottom: 35px;
+        margin-left: 25px;
+    }
+
+    .container .image-design{
+        justify-content: center;
+    }
+
+    .container .image-design img{
+        width: 80%;
+        height: auto;
+    }
+
+    .cabecalho .logo img {
+        width: 180px;
     }
 
     .container {
@@ -50,40 +47,157 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
     }
 
     .content .text-content {
         text-align: center;
-    }
-}
-
-
-@media (max-width:768px) {
-    .container .image-design {
-        min-width: 323px;
+        padding: 20px 40px;
     }
 
     .content .text-content h1 {
-        font-size: 3rem;
-
+        font-size: 3.6rem;
+        margin-bottom:15px ;
     }
 
     .content .text-content p {
-        font-size: 1.7rem;
+        font-size: 2.37rem;
+        padding: 0 4rem;
+    }
+
+    .content .text-content .button a {
+        padding: 15px 135px;
+        font-size: 2.2rem;
+        margin: 4rem 0;
     }
 
     .rodape .social {
         justify-content: center;
         align-items: center;
-        margin: 40px 0px 20px 0px;
+        margin: 40px 0;
         padding-right: 0rem;
+    }
+
+    .rodape .social a {
+        font-size: 2.5rem;
+        width: 55px;
+        height: 55px;
+    }
+
+    .rodape .social a#primeiro {
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width:426px) {
+    .cabecalho .logo {
+        margin-bottom: 35px;
+    }
+
+    .container {
+        padding: 0 25px;
+    }
+
+    .cabecalho .logo img {
+        width: 130px;
+    }
+
+    .container .image-design{
+        justify-content: center;
+    }
+
+    .container .image-design img{
+        width: 70%;
+        height: auto;
+    }
+
+    .content .text-content {
+        padding: 20px;
+    }
+
+    .content .text-content h1 {
+        font-size: 3rem;
+    }
+
+    .content .text-content p {
+        font-size: 2.2rem;
+        padding: 0 15px;
+    }
+
+    .content .text-content .button a {
+        padding: 14px 90px;
+        font-size: 1.65rem;
+        margin: 25px 0 0;
+    }
+
+    .rodape .social a {
+        font-size: 1.5rem;
+        width: 35px;
+        height: 35px;
     }
 }
 
 
-@media (max-width:1024px) {
+
+@media (max-width:376px) {
+
     .cabecalho .logo {
-        padding-bottom: 0px;
+        margin-bottom: 30px;
+    }
+
+    .container {
+        padding: 0px 18px;
+        gap: 20px;
+    }
+
+
+    .container .image-design {
+        min-width: 200px;
+    }
+
+    .container .image-design img {
+        width: 270px;
+    }
+
+    .content .text-content h1 {
+        font-size: 2.4rem;
+        padding: 15px;
+    }
+
+    .content .text-content p {
+        font-size: 1.75rem;
+        /* padding: 0 15px; */
+    }
+
+    .content .text-content .button a {
+        padding: 15px 90px;
+        margin: 25px 0 35px;
+    }
+
+    .rodape .social {
+        margin: 10px 0px 20px 0px;
+    }
+}
+
+@media (max-width: 322px) {
+    .container .image-design img {
+        margin-bottom: 20px;
+    }
+
+    .content .text-content {
+        padding: 10px;
+    }
+
+    .content .text-content h1 {
+        font-size: 2rem;
+    }
+
+    .content .text-content p {
+        font-size: 1.55rem;
+    }
+
+    .content .text-content .button a {
+        padding: 13px 80px;
+        font-size: 1.35rem;
+        margin: 20px;
     }
 }

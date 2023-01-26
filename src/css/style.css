@@ -1,7 +1,14 @@
 html {
-    background: url(../images/bg-desktop.svg);
+    background: url(../images/bg-desktop.svg) no-repeat center;
     background-color: hsl(257, 40%, 49%);
     font-size: 62.5%;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .cabecalho .logo {
@@ -52,14 +59,14 @@ html {
 
 .content .text-content .button a {
     display: inline-block;
-    padding: 20px 60px;
+    padding: 15px 40px;
     font-size: 2rem;
     border-radius: 50px;
     margin-top: 25px;
     background-color: #fff;
     transition: .3s ease-in-out;
     color: hsl(257, 40%, 49%);
-}
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
 
 .content .text-content .button a:hover {
     background-color: hsl(300, 69%, 71%);
